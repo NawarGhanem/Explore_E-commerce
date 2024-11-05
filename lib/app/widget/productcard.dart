@@ -1,17 +1,19 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:project1/app/data/models/product_model.dart';
 import 'package:project1/app/modules/home/views/home_view.dart';
 
 class ProductCard extends StatelessWidget {
-  final int index;
+  final ProductModel product;
 
-  const ProductCard({Key? key, required this.index}) : super(key: key);
+  const ProductCard({Key? key, required this.product}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 400.h,
+      width: MediaQuery.of(context).size.width / 2,
       child: Card(
         color: Colors.white,
         child: Column(
@@ -27,9 +29,7 @@ class ProductCard extends StatelessWidget {
                   child: Icon(Icons.favorite, color: Colors.red),
                 ),
                 Image.asset(
-                  index == 0
-                      ? 'assets/images/image_1.png'
-                      : 'assets/images/image_1.png',
+                  'assets/images/image_1.png',
                   height: 80,
                   width: 80,
                 ),
@@ -44,7 +44,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
             Text(
-              'programmer T-shirt',
+              '${product.name}',
               style: TextStyle(fontSize: 14.0),
             ),
             Padding(
@@ -53,7 +53,7 @@ class ProductCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    index == 0 ? '\$150.00' : '\$752.00',
+                    '\$150.00',
                   ),
                   Icon(Icons.add)
                 ],

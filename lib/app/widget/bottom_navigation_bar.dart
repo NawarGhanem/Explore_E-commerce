@@ -61,7 +61,7 @@ class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
               : const Color(0xff707B81),
           bottom: heightResponsive * 30,
           left: widthResponsive * 31,
-          svgIcon: AppImages.homeIcon,
+          svgIcon: "assets/svg/add.svg",
         ),
         SvgImagePositioned(
           onTap: () {
@@ -80,7 +80,7 @@ class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
               : const Color(0xff707B81),
           bottom: heightResponsive * 30,
           left: widthResponsive * 94,
-          svgIcon: AppImages.navHeartIcon,
+          svgIcon: "assets/svg/add.svg",
         ),
         SvgImagePositioned(
           onTap: () {
@@ -99,7 +99,7 @@ class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
               : const Color(0xff707B81),
           bottom: heightResponsive * 30,
           right: widthResponsive * 99,
-          svgIcon: AppImages.notificationIcon,
+          svgIcon: "assets/svg/add.svg",
         ),
         SvgImagePositioned(
           onTap: () {
@@ -118,7 +118,7 @@ class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
               : const Color(0xff707B81),
           bottom: heightResponsive * 30,
           right: widthResponsive * 31,
-          svgIcon: AppImages.profileIcon,
+          svgIcon: "assets/svg/add.svg",
         ),
         Positioned(
             left: widthResponsive * 160,
@@ -137,7 +137,7 @@ class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
                       offset: Offset(0, 8))
                 ], shape: BoxShape.circle, color: Color(0xff34C759)),
                 child: SvgPicture.asset(
-                  AppImages.cartIcon,
+                  "assets/svg/add.svg",
                   color: Colors.white,
                 ),
               ),

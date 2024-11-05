@@ -5,7 +5,11 @@ import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'core/data/remot_source/base_api_client.dart';
+
 void main() {
+  BaseApiClient();
+
   runApp(const MyApp());
 }
 

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:project1/app/data/models/categories_model.dart';
 
 class AnimatedContainerItem extends StatelessWidget {
-  final String text;
+  final CategoriesModel categories;
   final Color color;
-  const AnimatedContainerItem(
-      {super.key, required this.text, required this.color});
+
+  const AnimatedContainerItem({
+    super.key,
+    required this.categories,
+    required this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +33,7 @@ class AnimatedContainerItem extends StatelessWidget {
           ],
         ),
         child: Text(
-          text,
+          " ${categories.name}",
           style: TextStyle(fontSize: 12.sp),
         ),
       ),

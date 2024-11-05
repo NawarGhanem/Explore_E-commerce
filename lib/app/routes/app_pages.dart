@@ -31,7 +31,10 @@ class AppPages {
         name: _Paths.HOME,
         page: () => HomeView(),
         binding: HomeBinding(),
-        middlewares: [OnboardingMiddlewares(), AuthMiddlewares()]),
+        middlewares: [
+          OnboardingMiddlewares(),
+          AuthMiddlewares(),
+        ]),
     GetPage(
       name: _Paths.FAVOURITEPAGE,
       page: () => const FavouritepageView(),

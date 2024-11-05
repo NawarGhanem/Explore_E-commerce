@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:project1/app/modules/home/bindings/home_binding.dart';
 import 'package:project1/app/modules/home/views/home_view.dart';
 
 import '../../../../core/constants/local_storage_keys.dart';
@@ -8,7 +9,7 @@ class Onboard3Controller extends GetxController {
   void next() async {
     LocalStorage localStorage = LocalStorage();
     localStorage.writeValue(LocalStorageKeys.onBoarding, true);
-    Get.to(() => HomeView());
+    Get.toNamed('/home');
   }
 
   final count = 0.obs;
