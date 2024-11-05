@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:project1/app/modules/favouritepage/views/favouritepage_view.dart';
 import 'package:project1/app/modules/login/bindings/login_binding.dart';
 import 'package:project1/app/modules/login/views/login_view.dart';
 import 'package:project1/core/data/local_source/local_storage.dart';
@@ -94,7 +95,9 @@ class DrawerElements extends StatelessWidget {
                 "assets/svg/Arrow.svg",
                 color: Colors.white,
               ),
-              onTap: () {},
+              onTap: () {
+                Get.to(FavouritepageView());
+              },
             ),
             ListTile(
               leading: SvgPicture.asset(

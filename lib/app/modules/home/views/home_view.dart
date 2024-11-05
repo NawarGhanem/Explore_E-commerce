@@ -164,6 +164,22 @@ class HomeView extends GetView<HomeController> {
                       });
                 }),
               ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 20.h),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "New Arrival",
+                      style: TextStyle(fontSize: 20.sp),
+                    ),
+                    Text(
+                      "See all",
+                      style: TextStyle(color: Colors.green),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
