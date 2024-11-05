@@ -9,11 +9,13 @@ class Customfilledbutton extends StatelessWidget {
   final double? borderwidth;
   final Color? backgroundcolor;
   final Color? textcolor;
+  final Color? bordercolor;
   const Customfilledbutton(
       {super.key,
       required this.text,
       this.backgroundcolor,
       this.borderwidth,
+      this.bordercolor,
       this.textcolor,
       required this.ontap,
       this.width,
@@ -25,7 +27,8 @@ class Customfilledbutton extends StatelessWidget {
       onTap: ontap,
       child: Container(
         decoration: BoxDecoration(
-          border: Border.all(width: borderwidth ?? 0, color: Colors.green),
+          border: Border.all(
+              width: borderwidth ?? 0, color: bordercolor ?? Colors.green),
           color: backgroundcolor ?? Colors.green,
           borderRadius: BorderRadius.circular(8.r),
         ),

@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        backgroundColor: const Color(0xff282828),
+        backgroundColor: const Color.fromRGBO(40, 40, 40, 1),
         child: Column(
           children: [
             Padding(

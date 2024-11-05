@@ -19,23 +19,9 @@ class LocalStorage {
     return _box.hasData(key);
   }
 
-  // Remove a value
-  void removeValue(String key) {
-    _box.remove(key);
-  }
-
-  // Clear all stored values
-  void clearAll() {
-    _box.erase();
-  }
-
 // save token
   void setToken(String token) {
     _box.write(LocalStorageKeys.token, token);
-  }
-
-  Future<void> setUseBiometric(bool value) async {
-    await _box.write(LocalStorageKeys.useBiometric, value);
   }
 
   void clearToken() {
@@ -45,16 +31,4 @@ class LocalStorage {
   String? get getToken {
     return _box.read(LocalStorageKeys.token);
   }
-
-  String? get checkPin {
-    return _box.read(LocalStorageKeys.localpassword);
-  }
 }
-
-// bool? get isDarkmode {
-//   return _box.read(LocalStorageKeys.theme);
-// }
-
-// void setIsDarkMode(bool mode) {
-//   _box.write(LocalStorageKeys.theme, mode);
-// }
